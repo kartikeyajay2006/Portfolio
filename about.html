@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Kartikeya Yadav</title>
+    <style>
+        body {
+            background-color: #1f242d;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1f27;
+            padding: 20px 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 0 25px;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            transition: font-size 0.3s;
+        }
+
+        .nav a:hover {
+            color: rgb(235, 95, 25);
+            font-size: 22px;
+        }
+
+        .nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            background-color: #00ffd1;
+            height: 3px;
+            width: 100%;
+            transform: scaleX(0);
+            transition: transform 0.75s ease-in-out;
+            transform-origin: left;
+        }
+
+        .nav a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .about_section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .about_section h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #00FFFF;
+            margin-bottom: 20px;
+        }
+
+        .about_section h2 {
+            font-size: 28px;
+            color: #00FFAB;
+            margin-top: 30px;
+        }
+
+        .about_section p {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .highlight {
+            color: #FFA500;
+            font-weight: bold;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            background-color: #2b303b;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 255, 171, 0.2);
+            text-align: center;
+            font-weight: bold;
+            color: #00ffd1;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 171, 0.4);
+        }
+
+        .quote {
+            margin-top: 40px;
+            font-style: italic;
+            color: #f9c004;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        @media (max-width: 600px) {
+            .about_section h1 {
+                font-size: 30px;
+            }
+
+            .about_section h2 {
+                font-size: 24px;
+            }
+
+            .about_section p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="practice.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="about_section">
+        <h1>About Me</h1>
+        <p>
+            Hello! I'm <span class="highlight">Kartikeya Yadav</span>, a tech enthusiast passionate about building
+            clean, interactive, and intelligent digital experiences. My journey started with curiosity and grew into a
+            purpose-driven passion to innovate using modern technologies.
+        </p>
+
+        <h2>Education</h2>
+        <p>
+            I did my schooling from <span class="highlight">Assisi Convent School</span> with <span
+                class="highlight">94%</span> in 10th grade, <span class="highlight">93%</span> in 11th grade, and <span class="highlight">89.4%</span> in 12th grade.
+        </p>
+        <p>
+            I'm currently pursuing a Bachelor's degree in Computer Science from <span class="highlight">Scaler School of
+                Technology</span>. My academic journey has sharpened my logical thinking and given me a solid foundation
+            in both software development and data science.
+        </p>
+
+        <h2>My Tech Stack</h2>
+        <div class="skills-list">
+            <div class="skill-item">HTML / CSS / Learning JavaScript</div>
+            <div class="skill-item">Artificial Intelligence</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Machine Learning</div>
+            <div class="skill-item">Generative AI</div>
+            <div class="skill-item">Git & GitHub</div>
+            <div class="skill-item">Java (Learning)</div>
+        </div>
+
+        <h2>What I Do</h2>
+        <p>
+            I specialize in crafting seamless user experiences as a <span class="highlight">Frontend Developer</span>. I
+            also explore the power of AI, working on <span class="highlight">machine learning</span> projects and
+            applying <span class="highlight">data-driven intelligence</span> to solve real-world problems.
+        </p>
+
+        <p>
+            I’m constantly exploring new tools and technologies to expand my knowledge and bring smarter solutions to
+            life.
+        </p>
+
+        <h2>Beyond Coding</h2>
+        <p>
+            Apart from tech, I love reading <span class="highlight">mythological books</span>, learning about <span
+                class="highlight">animals</span>, and keeping up with <span class="highlight">new technology</span>.
+        </p>
+        <p>
+            I also enjoy watching <span class="highlight">cricket</span> during my free time.
+        </p>
+
+        <p class="quote">"Code is not just written, it's crafted with purpose."</p>
+    </div>
+</body>
+
+</html>

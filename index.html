@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            background-color: #1f242d;
+        }
+
+        li {
+            list-style-type: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 27px;
+            padding: 12px;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        a:hover {
+            color: rgb(235, 95, 25);
+            font-size: 28px;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            background-color: #00ffab;
+            height: 3px;
+            width: 100%;
+            transform: scaleX(0);
+            transition: transform 0.6s ease-in-out;
+            transform-origin: left;
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: 800;
+            color: #00ffff;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px 60px;
+        }
+
+        @keyframes borderGlow {
+            0% {
+                box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 18px 5px rgba(0, 255, 255, 1);
+            }
+
+            100% {
+                box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.5);
+            }
+        }
+
+        .profile-image {
+            width: 480px;
+            height: 480px;
+            border-radius: 50%;
+            margin-top: 25px;
+            margin-left: 60px;
+            transition: transform 0.4s ease;
+            animation: borderGlow 4.5s ease-in-out infinite;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.15);
+            box-shadow: 0 8px 18px rgba(0, 255, 255, 0.4);
+        }
+
+        .hero_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            gap: 40px;
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        @keyframes roles {
+            0% {
+                content: "Roles: Frontend Developer";
+                color: #00ffab;
+                background-color: rgba(0, 255, 171, 0.1);
+            }
+
+            20% {
+                content: "Roles: Artificial Intelligence";
+                color: #00ffff;
+                background-color: rgba(0, 255, 255, 0.1);
+            }
+
+            40% {
+                content: "Roles: Machine Learning";
+                color: #ffa500;
+                background-color: rgba(255, 165, 0, 0.1);
+            }
+
+            60% {
+                content: "Roles: Python / SQL";
+                color: #ff69b4;
+                background-color: rgba(255, 105, 180, 0.1);
+            }
+
+            80% {
+                content: "Roles: Generative AI";
+                color: #ffd700;
+                background-color: rgba(255, 215, 0, 0.1);
+            }
+
+            100% {
+                content: "Roles: Exploring Java";
+                color: #7cfc00;
+                background-color: rgba(124, 252, 0, 0.1);
+            }
+        }
+
+        .role {
+            position: relative;
+            color: transparent;
+        }
+
+        .role::after {
+            content: "Frontend Developer";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #00ffab;
+            animation: roles 10s ease-in-out infinite;
+        }
+
+        .h-name {
+            font-size: 48px;
+            color: #00ffff;
+            margin: 12px 0;
+        }
+
+        .intro p {
+            font-size: 28px;
+        }
+
+        .portfolio {
+            font-size: 33px;
+            font-weight: 600;
+        }
+
+        .foot {
+            border: 4px ridge rgb(255, 50, 50);
+            color: rgb(252, 117, 7);
+            font-size: 20px;
+            font-weight: 600;
+            padding: 25px;
+            background: #383838;
+            border-radius: 14px;
+            max-width: 720px;
+            margin: 45px auto;
+            box-shadow: 0 0 18px rgba(0, 255, 171, 0.4);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .foot:hover {
+            color: #f9c004;
+            box-shadow: 0 0 28px 5px #f9c004;
+        }
+
+        .link {
+            color: #00ffab;
+            font-weight: bold;
+            text-decoration: none;
+            animation: linkAnim 4s infinite;
+            transition: color 0.3s ease;
+        }
+
+        @keyframes linkAnim {
+
+            0%,
+            100% {
+                color: #00ffab;
+                text-shadow: 0 0 5px #00ffab;
+            }
+
+            50% {
+                color: #0077b5;
+                text-shadow: 0 0 14px #0077b5;
+            }
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <ul class="nav">
+            <li class="name"> Kartikeya Yadav</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="practice.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </div>
+
+    <div id="hero" class="hero_section">
+        <div class="intro">
+            <h2 class="portfolio">Welcome to my portfolio website</h2>
+            <h1 class="h-name">
+                <pre>         I'm Kartikeya Yadav</pre>
+            </h1>
+            <h2 class="role">Frontend Developer</h2>
+            <p>
+                I design and build interactive, user-friendly websites and data-driven applications that blend clean
+                design with powerful functionality.
+                With a solid foundation in frontend development, Python, and data science, I create seamless digital
+                experiences that are both beautiful and intelligent. I enjoy integrating AI and machine learning to
+                solve
+                real problems and deliver smart, insightful features.
+                Always curious and constantly learning, I’m passionate about building modern, meaningful tech that adds
+                real value.
+            </p>
+        </div>
+        <img class="profile-image" src="profile.png" alt="profile_image">
+    </div>
+
+    <hr style="border: 1px solid #00ffab; width: 90%;">
+
+    <footer class="foot">
+        <div class="social-links">
+            <p>Building meaningful tech, one line of code at a time.</p><br>
+            <strong>LinkedIn:</strong>
+            <a class="link" href="https://www.linkedin.com/in/kartikeya-yadav-a535b236b/" target="_blank">
+                www.linkedin.com/in/kartikeya2006
+            </a><br><br>
+            <strong>Twitter:</strong>
+            <a class="link" href="https://x.com/kartikeya_06" target="_blank">@kartikeya_06</a><br><br>
+            <p>© 2025 Kartikeya Yadav. All rights reserved. Unauthorized use or duplication is prohibited.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Kartikeya Yadav</title>
+  <style>
+    body {
+      background-color: #1f242d;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a1f27;
+      padding: 20px 0;
+    }
+
+    li {
+      list-style: none;
+      padding: 0 25px;
+    }
+
+    li a {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      transition: font-size 0.3s;
+    }
+
+    a:hover {
+      color: rgb(235, 95, 25);
+      font-size: 22px;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      background-color: #00ffd1;
+      height: 3px;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.75s ease-in-out;
+      transform-origin: left;
+    }
+
+    a:hover::after {
+      transform: scaleX(1);
+    }
+    
+    .contact_section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .contact_container {
+      max-width: 900px;
+      width: 100%;
+      background-color: #2b303b;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 255, 171, 0.1);
+    }
+
+    .contact_section h2 {
+      color: #00ffd1;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact_text {
+      font-size: 25px;
+      line-height: 2;
+    }
+
+    .contact_text strong {
+      color: #ffa500;
+    }
+
+    .link {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      color: #00ffd1;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+      }
+      li {
+        padding: 10px 0;
+      }
+      .contact_container {
+        padding: 25px;
+      }
+      .contact_section h2 {
+        font-size: 28px;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="practice.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="contact_section">
+    <div class="contact_container">
+      <h2>Contact Me</h2>
+      <p class="contact_text">
+        <strong>Name:</strong> Kartikeya Yadav<br />
+        <strong>Personal Email:</strong>
+        <a href="mailto:kartikeya2006jay@gmail.com">kartikeya2006jay@gmail.com</a><br />
+        <strong>College Email:</strong>
+        <a href="mailto:kartikeya.25bcs10304@sst.scaler.com">kartikeya.25bcs10304@sst.scaler.com</a><br />
+        <strong>Phone:</strong>
+        <a href="tel:+919720613333">9720613333</a><br />
+        <strong>LinkedIn:</strong>
+        <a class="link" href="https://www.linkedin.com/in/kartikeya-yadav-a535b236b/" target="_blank">www.linkedin.com/in/kartikeya2006</a><br />
+        <strong>Twitter:</strong>
+        <a class="link" href="https://x.com/kartikeya_06" target="_blank">@kartikeya_06</a><br />
+        <strong>Address:</strong> Sundar Bhawan Gandhi Market Etah, Uttar Pradesh
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
